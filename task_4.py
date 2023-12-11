@@ -45,7 +45,7 @@ def create_autopark():
 
     with open('buses.txt', 'w') as file:
         for i in range(len(buses)):
-            file.write(str(buses[i].info()))
+            file.write(str(buses[i].info()) + '\n')
 
 def read_file(filename: str) -> list:
     with open(filename, 'r') as file:
